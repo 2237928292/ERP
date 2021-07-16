@@ -1,0 +1,406 @@
+.logo1index {
+    font-family: Arial;
+    width: 100%;
+    height: 100%;
+    .img {
+        width: 100%;
+        height: 100%;
+        background: url('~@/assets/images/b1.jpg');
+        background-size: cover;
+        overflow: hidden;
+    }
+    .rightLogo {
+        width: 500px;
+        height: 100%;
+        float: right;
+        background: #00a1ff;
+        padding: 160px 77px;
+        box-sizing: border-box;
+        // background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+        // background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        // background-image: linear-gradient(to right, #9C9C9C, transparent);
+    }
+    .rightLogo>p {
+        font-size: 46px;
+        letter-spacing: 2px;
+        line-height: 66px;
+        color: white;
+        text-shadow: 0px 6px 1px #83ACDB;
+        font-family: "Lucida Console", "Courier New", monospace;
+        ;
+        // font-weight: bold;
+    }
+    .home {
+        width: 500px;
+        height: 70%;
+        float: left;
+        margin-left: 80px;
+        margin-top: 100px;
+        float: left;
+    }
+    .ppt {
+        font-size: 26px;
+        color: #fff;
+        margin-bottom: 45px;
+    }
+    .elel {
+        width: 100%;
+        height: 80px;
+    }
+    .input-top {
+        margin-bottom: 50px;
+    }
+    @media(max-width:1100px) {
+        .rightLogo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 140px;
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+        .home {
+            padding-top: 100px;
+        }
+    }
+    .div {
+        width: 100%;
+        position: fixed;
+        bottom: 20px;
+        text-align: center;
+        color: #fff;
+    }
+    .el-checkbox__label {
+        color: #efefef;
+    }
+}
+
+//   Logo ^   
+// 创建合同
+.managementHTbox_s {
+    padding: 10px;
+    box-sizing: border-box;
+    .select {
+        // width: 300px;
+        margin-top: 15px;
+        font-size: 13px;
+        padding-left: 10px;
+    }
+    .bottom_but {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        button {
+            float: right;
+            margin: 10px;
+        }
+    }
+}
+
+// 编辑合同
+.BJmanagementHTbox_s {
+    #Number_input {
+        width: 85px;
+        height: 25px;
+        border: 1px solid #DCDFE6;
+        -webkit-appearance: none;
+        background-color: #FFF;
+        border-radius: 4px;
+        border: 1px solid #DCDFE6;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #606266;
+        line-height: 25px;
+        overflow: hidden;
+        .div_icon_text {
+            width: 25px;
+            height: 23px;
+            font-size: 12px;
+            float: left;
+            color: #838385;
+            background: #eef0f0;
+            text-align: center;
+        }
+        .div_icon_text:hover {
+            color: #00a1ff;
+        }
+        .div_icon_textConter {
+            width: 33px;
+            height: 25px;
+            float: left;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+    #Number_input:hover {
+        border: 1px solid #00a1ff;
+    }
+}
+
+// box404
+.box404 {
+    .Left404 {
+        width: 50%;
+        height: 100%;
+        float: left;
+        text-align: center;
+        padding-top: 100px;
+        box-sizing: border-box;
+        h1 {
+            line-height: 60px;
+        }
+        .el-divider {
+            margin: 50px 0;
+        }
+        .el-link {
+            margin: 0 50px;
+        }
+    }
+    .Right404 {
+        width: 50%;
+        height: 100%;
+        float: left;
+        background: #09c;
+        padding-top: 300px;
+        box-sizing: border-box;
+    }
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  组件
+// 分页
+.pagetion {
+    // max-width: 300px;
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+//   信息模块隔断  
+.segmentation {
+    width: 99%;
+    height: 30px;
+    border-bottom: 2px solid #ccc;
+    line-height: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: #09c;
+    font-size: 14px;
+    margin-top: 30px;
+    font-weight: bold;
+    float: left;
+}
+
+// 信息模块  的 透明左悬浮 区域
+.Fl {
+    float: left;
+    width: 70%;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+//       <div class="segmentation">基础信息</div>
+.itemmsgxx_document {
+    width: 300px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    float: left;
+    padding: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    span {
+        display: block;
+        width: 90px;
+        float: left;
+        font-weight: bold;
+    }
+    #SPan {
+        color: #505050;
+        font-weight: none;
+    }
+}
+
+// 这项特殊。单独针对保养合同 span 要求比较长的 ：售后去年维修花费
+.itemmsgxx_documentLength {
+    width: 300px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    float: left;
+    padding: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    span {
+        display: block;
+        width: 120px;
+        float: left;
+        font-weight: bold;
+    }
+    #SPan {
+        color: #505050;
+        font-weight: none;
+    }
+}
+
+.itemmsgxx_documentText {
+    width: 100%;
+    // height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    float: left;
+    padding: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    span {
+        display: block;
+        width: 90px;
+        float: left;
+        font-weight: bold;
+    }
+    #SPan {
+        color: #505050;
+        font-weight: none;
+    }
+}
+
+// 下拉框
+.itemmsgxx_documentSece {
+    width: 100%;
+    // height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    .leftSpan {
+        display: block;
+        width: 90px;
+        float: left;
+        font-weight: bold;
+    }
+}
+
+.itemmsgxX_document {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    span {
+        display: block;
+        width: 90px;
+        float: left;
+        font-weight: bold;
+    }
+}
+
+//   禁止选中
+.DisableSelection {
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+}
+
+.top_init_data_INWEll {
+    margin: 10px 0;
+}
+
+.timeline {
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+// 手风琴
+.el-collapse {
+    border-top: 1px solid #000;
+}
+
+//  !一级
+.box::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.box::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+
+.box::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ededed;
+}
+
+//  !二级
+.box_s::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.box_s::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+
+.box_s::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ededed;
+}
+
+.Saxo_kuang::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.Saxo_kuang::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+
+.Saxo_kuang::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ededed;
+}

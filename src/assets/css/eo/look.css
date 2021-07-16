@@ -1,0 +1,12 @@
+.inp{
+    width: 425px;
+}
+.inp span{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.addinput{
+    display: block;
+    width: 100%;
+    height: 100%;
+}

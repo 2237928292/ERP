@@ -1,0 +1,46 @@
+.Leftside{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+.LeftsideTop{
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc ;
+    box-sizing: border-box;
+}
+.LeftsideBottom{
+    width: 100%;
+    height: 25%;
+    padding-top: 10px;
+    box-sizing: border-box; 
+}
+.Top_Tool_init{
+    width: 100%;
+    height: 50px;
+}
+.Rightside{
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.transfer-footer {
+    margin-left: 20px;
+    padding: 6px 5px;
+  }
+  .butclass{
+      margin-top: 10px;
+  }
+  .tablejishi{
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      box-sizing: border-box;
+     
+  }

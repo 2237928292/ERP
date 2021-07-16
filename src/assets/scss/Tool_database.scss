@@ -1,0 +1,43 @@
+.top_init_data{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.li{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+
+}
+.content{
+    padding:  0px  25px ;
+    box-sizing: border;
+}
+
+.an{
+    margin-top: 5px;
+}
+.pagetion {
+    // max-width: 300px;
+    width: 90%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+//   background: #000;  此处影响到了其他位置
+  tbody{
+      background: #fff;
+  }
+
+ .el-table_1_column_7,.el-table_1_column_6{
+      padding: 1px 0  !important;
+  }
+  .el-table--enable-row-transition .el-table__body td{
+      padding: 1px 0  !important;
+  }
+  .el-table--mini td, .el-table--mini th{
+    padding: 1px 0  !important;
+  }

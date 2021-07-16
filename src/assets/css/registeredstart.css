@@ -1,0 +1,77 @@
+.box{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.h2{
+    text-align: center;
+    color: crimson;
+    line-height: 100px;
+}
+.conter{
+    width: 95%;
+    height: 98%;
+    margin: auto;
+    overflow: auto;
+}
+.conter::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+    margin-left: 10px;
+}
+  .conter::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: #535353;
+}
+.conter::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: #EDEDED;
+}
+.inp{
+    width: 400px;
+    height: 30px;
+    margin: 5px 0;
+    padding-left: 40px;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+}
+.head{
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+    color: #000;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    float: left;
+    font-size: 10px;
+}
+.baiop{
+    width: 120px;
+    height: 30px;
+    display: block;
+    float: left;
+    line-height: 28px;
+    font-size: 12px;
+}
+.zhu{
+    width: 170px;
+    margin: auto;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+.el-cascader{
+    width: 50%;
+    font-size: 10px;
+    line-height: 20px;
+    height: 20px;
+}

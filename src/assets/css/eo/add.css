@@ -1,0 +1,21 @@
+.Get-box {
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+    padding: 20px 10px 0 10px ;
+    box-sizing: border-box;
+  }
+  .admin{
+    width: 90%;
+    margin: 20px auto 0;
+  }
+  .el-dialog__body{
+    padding: 0;
+  }
+  .uc-cs-div{
+    padding: 0;
+  }

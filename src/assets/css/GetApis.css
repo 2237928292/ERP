@@ -1,0 +1,89 @@
+.Get-box {
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+  .el-pagination {
+    width: 300px;
+    height: 40px;
+  }
+  .pagetion {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .jains {
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+  }
+  .jss {
+    float: left;
+    margin-left: 30px;
+  }
+  .uc-cs-div {
+    margin: auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+  }
+  .pagition-li {
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+  .uc-table {
+    width: 90%;
+    height: 70%;
+    overflow: auto;
+    margin: auto;
+  }
+  .uc-table::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+  .uc-table::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 10px;
+     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: #535353;
+}
+.uc-table::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: #EDEDED;
+}
+  
+  .xinz {
+    float: right;
+  }
+  .el-dialog {
+    width: 65%;
+  }
+  .SpawEditor {
+    display: block;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    background: #409eff;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    color: aliceblue;
+    margin-left: 20px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .SpawEditor2 {
+    background: #f44336c4;
+  }
+  .cell .el-button--primary {
+    width: 50px;
+    height: 30px;
+    padding: 0;
+    font-size: 12px;
+  }
