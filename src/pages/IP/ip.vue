@@ -211,6 +211,17 @@ export default {
         this.zoom = 5.1;
       }
     },
+
+    bd_encrypt: function (gg_lng, gg_lat) {
+      var X_PI = (Math.PI * 3000.0) / 180.0;
+      var x = gg_lng,
+        y = gg_lat;
+      var z = Math.sqrt(x * x + y * y) + 0.00002 * Math.sin(y * X_PI);
+      var theta = Math.atan2(y, x) + 0.000003 * Math.cos(x * X_PI);
+      var bd_lng = z * Math.cos(theta) + 0.0065;
+      var bd_lat = z * Math.sin(theta) + 0.006;
+      return [bd_lng, bd_lat];
+    },
     // 获取工程师的定位  修改版    (只拿数据，将区域经理放在上边)
     initmapsGCS: function () {
       var obj = {
@@ -232,14 +243,26 @@ export default {
           // 设置点击标注得可用性
           EngineerPositioning[index]["title"] = true;
           // 将GWs84 转为 火星坐标系  然后转为 百度坐标系
-          EngineerPositioning[index].Longitude = this.BD_WGS(
+          // EngineerPositioning[index].Longitude = this.BD_WGS(
+          //   EngineerPositioning[index].Longitude,
+          //   EngineerPositioning[index].Latitude
+          // )[0];
+          // EngineerPositioning[index].Latitude = this.BD_WGS(
+          //   EngineerPositioning[index].Longitude,
+          //   EngineerPositioning[index].Latitude
+          // )[1];
+
+          // 测试
+          // bd_encrypt
+          EngineerPositioning[index].Longitude = this.bd_encrypt(
             EngineerPositioning[index].Longitude,
             EngineerPositioning[index].Latitude
           )[0];
-          EngineerPositioning[index].Latitude = this.BD_WGS(
+          EngineerPositioning[index].Latitude = this.bd_encrypt(
             EngineerPositioning[index].Longitude,
             EngineerPositioning[index].Latitude
           )[1];
+
           // 以下是将标志状态转为中文便于展示
           var GCSOT = EngineerPositioning[index].ServingOrderType;
           if (GCSOT == 0) {

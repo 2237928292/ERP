@@ -1387,13 +1387,14 @@ export default {
     initss: function () {
       var obj = {
         api: "get",
-        url: this.$store.state.http + "Product/GetProductsAsync",
+        url: this.$store.state.http + "Product/GetProducts2",
         data: {
           pageNum: this.pageNum,
           numPerPage: this.pagesize,
           orderField: "",
           orderDirection: "",
           kitflag: false,
+          type: 2,
           //   规定参数：bool kitflag   true零配件   false整机
           productCode: this.productCode,
           //   产品编码

@@ -25,7 +25,7 @@
           <td style="width:25%"><span>{{item.Date.split('T')[0]}}</span></td>
           <td style="width:60%; text-align:left;">
             <span>
-              <span>[维修] 张家口轩之宝汽车销售服务有限公司</span><br>
+              <span>{{item.Info}}</span><br>
             </span>
           </td>
           <td style="width:15%"><span>{{item.Days}}</span></td>

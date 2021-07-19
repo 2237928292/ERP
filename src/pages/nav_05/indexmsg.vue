@@ -635,6 +635,7 @@ export default {
           DiscountAmount: this.DiscountAmount,
           SaveSOGoodDtos: SaveSOGoodDtos,
           BelongCompany: this.BelongCompany,
+          SoQuoteType: this.SoQuoteType,
         },
       };
       console.log(obj);

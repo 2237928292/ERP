@@ -183,19 +183,19 @@
     <el-drawer :visible.sync="drawer" direction="ltr" :modal="false" style="width: 200%" title="添加设备" :before-close="handleClose">
       <div class="top_init_data" style="marginbottom: 10px">
         <!-- 检索内容 -->
-        <el-input style="width: 193px" size="mini" v-model="productCode" @change="initss(1)" placeholder="请输入产品编码"></el-input>
+        <el-input style="width: 193px" size="mini" v-model="productCode" @change="initsss(1)" placeholder="请输入产品编码"></el-input>
         <!-- 产品编码 -->
-        <el-input style="width: 193px" size="mini" v-model="barcodeMemo" @change="initss(1)" placeholder="请输入内部编码"></el-input>
+        <el-input style="width: 193px" size="mini" v-model="barcodeMemo" @change="initsss(1)" placeholder="请输入内部编码"></el-input>
         <!-- 内部编码 -->
-        <el-input style="width: 193px" size="mini" v-model="desc" @change="initss(1)" placeholder="请输入产品描述"></el-input>
+        <el-input style="width: 193px" size="mini" v-model="desc" @change="initsss(1)" placeholder="请输入产品描述"></el-input>
         <!-- 描述 -->
-        <el-input style="width: 193px" size="mini" v-model="memo" @change="initss(1)" placeholder="请输入产品备注"></el-input>
+        <el-input style="width: 193px" size="mini" v-model="memo" @change="initsss(1)" placeholder="请输入产品备注"></el-input>
 
         <el-select v-model="man" @change="initsss(1)" clearable size="mini" placeholder="请选择品牌">
           <el-option v-for="item in  options" :key="item.ID" :label="item.Name" :value="item.Name"></el-option>
         </el-select>
 
-        <el-button size="mini" type="primary" @click="initss()" style="float: right">检索</el-button>
+        <el-button size="mini" type="primary" @click="initsss()" style="float: right">检索</el-button>
         <!-- 选择品牌 -->
       </div>
 

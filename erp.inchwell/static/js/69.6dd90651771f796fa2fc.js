@@ -1,1 +1,0 @@
-webpackJsonp([69],{"O8/t":function(t,e){},df6d:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r={render:function(){var t=this.$createElement;return(this._self._c||t)("div",{staticClass:"box conter"},[this._v("\n    敬请期待！\n")])},staticRenderFns:[]};var s=n("VU/8")(null,r,!1,function(t){n("O8/t")},null,null);e.default=s.exports}});
