@@ -396,7 +396,7 @@
         </div>
 
         <!-- 表格 -->
-        <el-table :data="Datatable" size="mini" :height="tableheight" border style="marginbottom: 10px" ref="multipleTable" :header-cell-style="{ background: '#e1e1e1' }">
+        <el-table :data="Datatable" size="mini" :height="this.$store.state.TableOptimumHeight" border style="marginbottom: 10px" ref="multipleTable" :header-cell-style="{ background: '#e1e1e1' }">
           <el-table-column prop="ProductCode" label="产品编号" width="170"></el-table-column>
           <el-table-column prop="BarcodeMemo" v-if="this.BelongToCustomer == false" label="内部编码" width="140"></el-table-column>
           <el-table-column prop="SN" v-if="this.BelongToCustomer == true" label="序列号" width="130"></el-table-column>
@@ -418,8 +418,10 @@
         </el-table>
         <el-button type="primary" size="mini" style="float: right" @click="addscheck()">添加选择</el-button>
         <!-- 分页 -->
-        <el-pagination class="pagition-li" @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="1" :page-sizes="this.$store.state.Vuex.pageSNumber" :page-size="pagesize"
-          layout=" total , sizes, prev, pager, next, jumper " :total="total"></el-pagination>
+        <nav style="text-align: center">
+          <el-pagination class="pagition-li" @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="1" :page-sizes="this.$store.state.Vuex.pageSNumber" :page-size="pagesize"
+            layout=" total , sizes, prev, pager, next, jumper " :total="total"></el-pagination>
+        </nav>
       </el-drawer>
     </div>
 
@@ -1394,7 +1396,7 @@ export default {
           orderField: "",
           orderDirection: "",
           kitflag: false,
-          type: 2,
+          protype: 2,
           //   规定参数：bool kitflag   true零配件   false整机
           productCode: this.productCode,
           //   产品编码
